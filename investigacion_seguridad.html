@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre Seguridad de Páginas Web y Frameworks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Investigación sobre Seguridad de Páginas Web y Frameworks</h1>
+
+    <section id="owasp">
+        <h2>OWASP (Open Web Application Security Project)</h2>
+        <p>OWASP es una organización sin fines de lucro enfocada en mejorar la seguridad del software. Proporciona una serie de recursos, incluyendo documentación, herramientas y estándares que ayudan a las organizaciones a desarrollar, mantener y operar aplicaciones de manera segura.</p>
+        <h3>Principales Recursos y Proyectos de OWASP:</h3>
+        <ul>
+            <li><strong>OWASP Top Ten</strong>: Una lista de los diez riesgos más críticos de seguridad en aplicaciones web. Esta lista se actualiza periódicamente y es una referencia fundamental para los desarrolladores.</li>
+            <li><strong>OWASP ASVS (Application Security Verification Standard)</strong>: Un marco de requisitos de seguridad que se puede utilizar para diseñar, desarrollar y probar aplicaciones web.</li>
+            <li><strong>OWASP ZAP (Zed Attack Proxy)</strong>: Una herramienta de pruebas de seguridad de aplicaciones web que puede ser utilizada para encontrar vulnerabilidades en las aplicaciones.</li>
+            <li><strong>OWASP SAMM (Software Assurance Maturity Model)</strong>: Un modelo que ayuda a las organizaciones a formular e implementar una estrategia de seguridad de software a medida.</li>
+        </ul>
+        <h3>Principales Riesgos de OWASP Top Ten:</h3>
+        <ul>
+            <li>Inyección</li>
+            <li>Autenticación rota</li>
+            <li>Exposición de datos sensibles</li>
+            <li>Entidades externas XML (XXE)</li>
+            <li>Control de acceso roto</li>
+            <li>Configuración de seguridad incorrecta</li>
+            <li>Secuencias de comandos entre sitios (XSS)</li>
+            <li>Deserialización insegura</li>
+            <li>Usos de componentes con vulnerabilidades conocidas</li>
+            <li>Registro y monitoreo insuficientes</li>
+        </ul>
+    </section>
+
+    <section id="ssl-tls">
+        <h2>SSL / TLS (Secure Sockets Layer / Transport Layer Security)</h2>
+        <p>SSL y TLS son protocolos criptográficos diseñados para proporcionar comunicaciones seguras a través de una red. Aunque SSL es el antecesor de TLS, ambos términos a menudo se usan indistintamente para referirse a la seguridad de las comunicaciones en internet.</p>
+        <h3>Características y Funciones de SSL/TLS:</h3>
+        <ul>
+            <li><strong>Cifrado</strong>: Proporciona confidencialidad mediante el cifrado de los datos transmitidos.</li>
+            <li><strong>Autenticación</strong>: Verifica la identidad de los participantes en la comunicación.</li>
+            <li><strong>Integridad de Datos</strong>: Asegura que los datos no hayan sido alterados durante la transmisión.</li>
+            <li><strong>Certificados Digitales</strong>: Utilizados para verificar la identidad de los servidores y en algunos casos, de los clientes.</li>
+        </ul>
+        <h3>Proceso de Establecimiento de una Conexión SSL/TLS:</h3>
+        <ul>
+            <li><strong>Handshake</strong>: Proceso de negociación inicial donde se establece el protocolo de cifrado y se intercambian certificados.</li>
+            <li><strong>Cifrado de Datos</strong>: Una vez establecido el canal seguro, se procede al cifrado de los datos transmitidos.</li>
+            <li><strong>Terminación de la Conexión</strong>: Finalización de la comunicación segura.</li>
+        </ul>
+    </section>
+
+    <section id="frameworks">
+        <h2>Frameworks</h2>
+        <h3>React</h3>
+        <p>React es una biblioteca de JavaScript desarrollada por Facebook para la construcción de interfaces de usuario. Es conocida por su rendimiento y flexibilidad.</p>
+        <h4>Características Principales de React:</h4>
+        <ul>
+            <li><strong>Componentes</strong>: React está basado en componentes reutilizables.</li>
+            <li><strong>Virtual DOM</strong>: Mejora el rendimiento al actualizar solo los cambios en el DOM.</li>
+            <li><strong>Unidirectional Data Flow</strong>: Facilita la gestión de datos predecible.</li>
+            <li><strong>JSX</strong>: Sintaxis que combina JavaScript y HTML, simplificando la creación de componentes.</li>
+        </ul>
+
+        <h3>Angular</h3>
+        <p>Angular es un framework de desarrollo web creado por Google. Utiliza TypeScript y es ideal para aplicaciones de gran escala.</p>
+        <h4>Características Principales de Angular:</h4>
+        <ul>
+            <li><strong>MVC (Model-View-Controller)</strong>: Facilita la separación de la lógica de la aplicación y la interfaz de usuario.</li>
+            <li><strong>Two-Way Data Binding</strong>: Sincroniza automáticamente el modelo y la vista.</li>
+            <li><strong>Dependency Injection</strong>: Gestión eficiente de dependencias, facilitando la modularidad y la reutilización del código.</li>
+            <li><strong>TypeScript</strong>: Un lenguaje tipado que ayuda a prevenir errores y mejora la mantenibilidad del código.</li>
+        </ul>
+
+        <h3>Vue.js</h3>
+        <p>Vue.js es un framework progresivo de JavaScript para construir interfaces de usuario. Es conocido por su simplicidad y facilidad de integración.</p>
+        <h4>Características Principales de Vue.js:</h4>
+        <ul>
+            <li><strong>Reactividad</strong>: Sistema de reactividad eficiente para gestionar cambios en los datos.</li>
+            <li><strong>Componentes</strong>: Estructura basada en componentes reutilizables.</li>
+            <li><strong>Directivas</strong>: Facilitan la manipulación del DOM de manera declarativa.</li>
+            <li><strong>Ecosistema Modular</strong>: Integración con bibliotecas y herramientas para construir aplicaciones completas.</li>
+        </ul>
+        <h4>Bibliografia
+            <ul>
+            <li>Dziuba, A. (2022, noviembre 22). Angular vs. React vs. Vue.Js – choosing a JavaScript framework for your project in 2023. Relevant Software. https://relevant.software/blog/angular-vs-react-vs-vue-js-choosing-a-javascript-framework-for-your-project/
+
+</li>
+ <li>¿qué es open worldwide application security project (OWASP)? (s/f). F5, Inc. Recuperado el 20 de junio de 2024, de https://www.f5.com/es_es/glossary/owasp
+</li>
+        </h4>
+    </section>
+
+</body>
+</html>

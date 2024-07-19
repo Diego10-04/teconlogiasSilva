@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investigación sobre el Modelo Vista Controlador (MVC)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo Vista Controlador (MVC)</h1>
+    <p>El Modelo Vista Controlador (MVC) es un patrón de arquitectura de software que separa una aplicación en tres componentes principales: el Modelo, la Vista y el Controlador. Este patrón ayuda a organizar el código de manera que se mejore la modularidad y se facilite el mantenimiento y la escalabilidad de las aplicaciones.</p>
+
+    <h2>Definición</h2>
+    <p>MVC es un patrón arquitectónico que divide una aplicación en tres componentes interconectados. Esta separación permite gestionar la complejidad al dividir una aplicación en secciones que se ocupan de diferentes aspectos del funcionamiento de la misma:</p>
+
+    <h2>Componentes principales</h2>
+    <ul>
+        <li><strong>Modelo:</strong> Representa los datos y la lógica de negocio de la aplicación. Es responsable de la gestión de los datos y de las reglas de negocio que determinan cómo se pueden modificar estos datos. El Modelo notifica a la Vista cuando hay cambios en los datos.</li>
+        <li><strong>Vista:</strong> Es la representación visual de los datos del Modelo. La Vista se encarga de mostrar los datos al usuario y de recibir la entrada del usuario, que luego envía al Controlador para que la procese. La Vista observa los cambios en el Modelo y actualiza la presentación de los datos en consecuencia.</li>
+        <li><strong>Controlador:</strong> Actúa como intermediario entre el Modelo y la Vista. Recibe la entrada del usuario a través de la Vista, procesa esta entrada (posiblemente realizando cambios en el Modelo) y devuelve la salida apropiada a la Vista. El Controlador contiene la lógica que responde a la entrada del usuario y actualiza el Modelo según sea necesario.</li>
+    </ul>
+
+    <h2>Características principales</h2>
+    <ul>
+        <li><strong>Separación de responsabilidades:</strong> Cada componente tiene una responsabilidad claramente definida, lo que facilita la gestión y el mantenimiento del código.</li>
+        <li><strong>Modularidad:</strong> Al separar la aplicación en diferentes componentes, es más fácil modificar y probar cada parte de la aplicación por separado.</li>
+        <li><strong>Reutilización de código:</strong> Los componentes pueden ser reutilizados en diferentes partes de la aplicación o en otros proyectos.</li>
+    </ul>
+
+    <h2>Ventajas</h2>
+    <ul>
+        <li><strong>Facilidad de mantenimiento:</strong> Al separar la lógica de negocio, la interfaz de usuario y la gestión de entradas en diferentes componentes, es más fácil realizar cambios y mantener el código.</li>
+        <li><strong>Escalabilidad:</strong> MVC facilita la adición de nuevas funcionalidades sin afectar el resto de la aplicación.</li>
+        <li><strong>Reutilización de componentes:</strong> Los componentes del Modelo, Vista y Controlador pueden ser reutilizados en diferentes partes de la aplicación o en diferentes proyectos.</li>
+    </ul>
+
+    <h2>Desventajas</h2>
+    <ul>
+        <li><strong>Complejidad:</strong> MVC puede añadir complejidad adicional a la aplicación, especialmente para proyectos pequeños o simples.</li>
+        <li><strong>Curva de aprendizaje:</strong> Puede ser más difícil de aprender y de implementar correctamente para los desarrolladores nuevos en el patrón MVC.</li>
+        <li><strong>Exceso de planificación:</strong> La separación estricta de componentes puede llevar a una planificación excesiva antes de que se pueda escribir código funcional.</li>
+    </ul>
+
+    <h2>Ejemplos de uso</h2>
+    <ul>
+        <li><strong>Aplicaciones web:</strong> MVC es ampliamente utilizado en el desarrollo de aplicaciones web. Frameworks como Ruby on Rails, Django y ASP.NET MVC implementan este patrón.</li>
+        <li><strong>Aplicaciones de escritorio:</strong> Frameworks de desarrollo de software de escritorio, como el modelo Swing de Java, también utilizan el patrón MVC.</li>
+        <li><strong>Aplicaciones móviles:</strong> Algunos frameworks para el desarrollo de aplicaciones móviles, como Android y iOS, emplean patrones que siguen la filosofía MVC.</li>
+    </ul>
+
+    <h2>Ejemplo de flujo de trabajo en MVC</h2>
+    <p>Un ejemplo típico de flujo de trabajo en una aplicación MVC es el siguiente:</p>
+    <ul>
+        <li>El usuario interactúa con la Vista y realiza una acción (por ejemplo, presiona un botón).</li>
+        <li>La Vista envía la entrada del usuario al Controlador.</li>
+        <li>El Controlador procesa la entrada del usuario, actualiza el Modelo si es necesario y selecciona la Vista adecuada para la respuesta.</li>
+        <li>El Modelo notifica a la Vista de cualquier cambio en los datos.</li>
+        <li>La Vista actualiza la presentación de los datos y muestra la respuesta al usuario.</li>
+    </ul>
+
+    <h2>Conclusiones</h2>
+    <p>El Modelo Vista Controlador (MVC) es un patrón de diseño que promueve la separación de responsabilidades en una aplicación. Esta separación facilita el mantenimiento, mejora la escalabilidad y permite la reutilización de componentes. Aunque puede agregar complejidad adicional, especialmente en aplicaciones pequeñas, los beneficios de utilizar MVC en términos de organización y gestión del código superan estas desventajas en la mayoría de los casos.</p>
+</body>
+</html>

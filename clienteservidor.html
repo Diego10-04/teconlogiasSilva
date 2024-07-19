@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investigación sobre la Arquitectura Cliente-Servidor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arquitectura Cliente-Servidor</h1>
+    <p>La arquitectura cliente-servidor es un modelo de diseño en el que las tareas se dividen entre los proveedores de recursos o servicios, llamados servidores, y los consumidores, llamados clientes. Aquí tienes una investigación detallada sobre esta arquitectura:</p>
+
+    <h2>Definición</h2>
+    <p>La arquitectura cliente-servidor es un modelo computacional que separa la funcionalidad en dos partes principales: los programas y la interfaz de usuario que se ejecutan en el lado del cliente y los servicios que se ejecutan en el lado del servidor. Los clientes realizan solicitudes de servicios y los servidores responden con los recursos necesarios para realizar esas tareas.</p>
+
+    <h2>Componentes principales</h2>
+    <ul>
+        <li><strong>Cliente:</strong> Es la interfaz de usuario y la aplicación que solicita los recursos o servicios del servidor. Puede ser una aplicación de escritorio, una aplicación web, un dispositivo móvil, etc.</li>
+        <li><strong>Servidor:</strong> Es el proveedor de recursos o servicios. Responde a las solicitudes del cliente, procesa la información y envía los resultados de vuelta al cliente. Puede ser un servidor físico o virtual que ejecuta aplicaciones y servicios.</li>
+    </ul>
+
+    <h2>Características principales</h2>
+    <ul>
+        <li><strong>Interacción cliente-servidor:</strong> Los clientes envían solicitudes al servidor, que responde con los recursos solicitados o con un mensaje de error si la solicitud no puede ser completada.</li>
+        <li><strong>Independencia de plataforma:</strong> Los clientes y servidores pueden ejecutarse en diferentes sistemas operativos y hardware, siempre y cuando sigan los estándares de comunicación establecidos.</li>
+        <li><strong>Escalabilidad:</strong> La arquitectura cliente-servidor permite escalar tanto verticalmente (añadiendo más recursos a un servidor) como horizontalmente (añadiendo más servidores) para manejar un mayor número de solicitudes de clientes.</li>
+    </ul>
+
+    <h2>Tipos de arquitectura cliente-servidor</h2>
+    <ul>
+        <li><strong>Cliente-Servidor clásico:</strong> Un cliente solicita recursos o servicios a un servidor, que responde a la solicitud.</li>
+        <li><strong>Cliente-Servidor de tres capas:</strong> Se divide en capas de presentación, lógica de negocio y datos, lo que permite una mayor modularidad y flexibilidad en el desarrollo de aplicaciones.</li>
+        <li><strong>Cliente-Servidor basado en web:</strong> Utiliza el protocolo HTTP para la comunicación entre cliente y servidor, comúnmente utilizado en aplicaciones web.</li>
+    </ul>
+
+    <h2>Ventajas</h2>
+    <ul>
+        <li><strong>Distribución de carga:</strong> Permite distribuir la carga de trabajo entre varios servidores, mejorando el rendimiento y la disponibilidad.</li>
+        <li><strong>Facilidad de mantenimiento:</strong> Al dividir la funcionalidad en clientes y servidores, facilita la actualización y mantenimiento de cada parte por separado.</li>
+        <li><strong>Escalabilidad:</strong> Permite escalar vertical u horizontalmente para satisfacer las demandas de un mayor número de clientes.</li>
+    </ul>
+
+    <h2>Desventajas</h2>
+    <ul>
+        <li><strong>Complejidad:</strong> Puede resultar complejo gestionar la comunicación entre clientes y servidores, especialmente en arquitecturas distribuidas.</li>
+        <li><strong>Costo:</strong> Implementar y mantener una infraestructura cliente-servidor puede resultar costoso, especialmente en entornos empresariales.</li>
+        <li><strong>Seguridad:</strong> La comunicación entre clientes y servidores puede ser vulnerable a ataques si no se implementan medidas de seguridad adecuadas.</li>
+    </ul>
+
+    <h2>Ejemplos de uso</h2>
+    <ul>
+        <li><strong>Aplicaciones web:</strong> Utilizan la arquitectura cliente-servidor basada en web para proporcionar servicios a través de internet.</li>
+        <li><strong>Sistemas empresariales:</strong> Utilizan la arquitectura cliente-servidor para gestionar bases de datos, recursos de red y servicios de aplicación en entornos empresariales.</li>
+        <li><strong>Juegos en línea:</strong> Utilizan la arquitectura cliente-servidor para gestionar la interacción entre múltiples jugadores en tiempo real.</li>
+    </ul>
+
+    <h2>Paradigmas de la arquitectura cliente-servidor</h2>
+    <ul>
+        <li><strong>Cliente-Servidor clásico:</strong> Este es el modelo básico en el que un cliente envía solicitudes y el servidor responde proporcionando los recursos solicitados.</li>
+        <li><strong>Cliente-Servidor de tres capas:</strong> En este modelo, se agregan capas adicionales entre el cliente y el servidor para mejorar la escalabilidad y la flexibilidad. Las capas típicas incluyen la capa de presentación (cliente), la capa de lógica de negocio y la capa de datos (servidor).</li>
+        <li><strong>Cliente-Servidor de múltiples capas:</strong> Similar al modelo de tres capas, pero con la posibilidad de tener múltiples capas de lógica de negocio o servicios intermedios entre el cliente y el servidor de datos.</li>
+        <li><strong>Cliente-Servidor sin estado (stateless):</strong> En este modelo, cada solicitud del cliente al servidor es independiente y no se mantiene información sobre el estado del cliente en el servidor entre las solicitudes.</li>
+        <li><strong>Cliente-Servidor con estado (stateful):</strong> A diferencia del modelo sin estado, en este modelo el servidor mantiene información sobre el estado del cliente entre las solicitudes.</li>
+        <li><strong>Cliente-Servidor distribuido:</strong> Este paradigma implica la distribución de la lógica de la aplicación y los datos entre múltiples servidores para mejorar el rendimiento y la disponibilidad.</li>
+        <li><strong>Cliente-Servidor basado en web (Web-based):</strong> En este modelo, el cliente es un navegador web que interactúa con un servidor web a través del protocolo HTTP para acceder a aplicaciones web y servicios en línea.</li>
+    </ul>
+
+    <h2>Conclusiones</h2>
+    <p>La arquitectura cliente-servidor es un modelo de diseño fundamental en la informática moderna, utilizado en una amplia variedad de aplicaciones y servicios. Proporciona una forma eficiente de distribuir tareas y recursos entre clientes y servidores, permitiendo escalabilidad, flexibilidad y facilidad de mantenimiento. Sin embargo, su complejidad y costos asociados deben ser considerados al implementar esta arquitectura en un sistema o aplicación.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vue.js Example</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+<div id="app">
+<h1 align="center"><font color="red">{{ message }}</font></h1>
+<h1 align="center"> <button @click="incrementCounter">Hacer Click</button>
+<h1 align="center"><p>Contador: {{ click }}</p>
+</div>
+<script>
+var app = new Vue({
+el: '#app',
+data: {
+message: 'Hola codigo de framework, Vue!',
+click: 0
+},
+methods: {
+incrementCounter: function() {
+this.click += 1;
+}
+}
+});
+</script>
+</body>
+</html>
