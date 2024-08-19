@@ -1,18 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces a Prácticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ol {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            counter-reset: section;
+        }
+        ol > li {
+            counter-increment: section;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ol > li::before {
+            content: counters(section, ".") " ";
+            font-weight: bold;
+            margin-right: 10px;
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<ol type =I>
-    <li> <a href="tabla.html">Entrar a tabla</a></li>
-    <li> <a href="image.html">Entrar a hola mundo</a></li>
-    <li> <a href="audio.html">Entrar a audio</a></li>
-<li> <a href="practicacss.html">Entrar a practica CSS</a></li>
-<li> <a href="registro.html">Entrar a practica de registro</a></li>
-<li> <a href="index.html">Entrar a portada</a></li>
-
-
-
-</ol>
-
+    <h1>Enlaces a Prácticas</h1>
+    <ol type="I">
+        <li><a href="tabla.html">Entrar a tabla</a></li>
+        <li><a href="image.html">Entrar a hola mundo</a></li>
+        <li><a href="audio.html">Entrar a audio</a></li>
+        <li><a href="practicacss.html">Entrar a práctica CSS</a></li>
+        <li><a href="registro.html">Entrar a práctica de registro</a></li>
+        <li><a href="PrácticaAccess.pdf" download>Entrar a nuestra práctica (PDF)</a></li>
+        <li><a href="index.html">Entrar a portada</a></li>
+    </ol>
 </body>
 </html>
