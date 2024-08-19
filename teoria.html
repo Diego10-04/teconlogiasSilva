@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investigaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ol {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            counter-reset: section;
+        }
+        ol > li {
+            counter-increment: section;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ol > li::before {
+            content: counters(section, ".") " ";
+            font-weight: bold;
+            margin-right: 10px;
+            color: #2c3e50;
+        }
+        ol ol {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        ol ol > li {
+            margin-bottom: 10px;
+            border-left: 4px solid #2c3e50;
+            padding-left: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <h1>Investigaciones</h1>
     <ol type="I">
         <li><strong>Primer Parcial</strong>
             <ol>
@@ -14,7 +66,7 @@
                 <li><a href="investigacion_seguridad.html">Investigación Seguridad de Páginas Web y Frameworks</a></li>
                 <li><a href="Frontendybackend.html">Investigación Frontend y Backend</a></li>
                 <li><a href="Peertopeer.html">Investigación Peer-to-Peer</a></li>
-            <li><a href="TECNOLOGIASWEBEvelyn.pdf">Investigación de Gerardos</a></li>
+                <li><a href="TECNOLOGIASWEBEvelyn.pdf" download>Investigación de Gerardos (PDF)</a></li>
             </ol>
         </li>
         <li><strong>Segundo Parcial</strong>
@@ -24,9 +76,11 @@
             </ol>
         </li>
         <li><a href="Principales tecnologías_Gestoresdecontenido(Wordpress,Joomla,Typo3,Magento,Drupal).html">Investigación Principales Tecnologías: Gestores de Contenido (WordPress, Joomla, Typo3, Magento, Drupal)</a></li>
-        <li><a href="GestoresdeContenido.pdf">Investigación de Jordis</a></li>
+        <li><a href="GestoresdeContenido.pdf" download>Investigación de Jordis (PDF)</a></li>
         <li><strong>Tercer Parcial</strong></li>
-        <li><a href="Presentación_T.pdf">Investigación de Nosotros</a></li>
+        <li><a href="Presentación_T.pdf" download>Investigación de Nosotros (PDF)</a></li>
     </ol>
 </body>
+</html>
+
 </html>
